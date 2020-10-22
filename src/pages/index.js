@@ -15,9 +15,9 @@ const App = () =>{
     <div className="page-body">
       <div className="home">
         <section className="start-section">
-          <p>
+          <h1>
             The meal kit everyone relies on
-          </p>
+          </h1>
         </section>
       </div>
     </div>
