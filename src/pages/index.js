@@ -18,6 +18,8 @@ const App = () =>{
           <h1>
             The meal kit everyone relies on
           </h1>
+          <button>Learn More</button>
+
         </section>
       </div>
     </div>
