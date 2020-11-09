@@ -19,6 +19,10 @@ const Nav = () => (
         );
       })}
     </ul>
+    <ul>
+      <a href="/login">Log In</a>
+      <a href="/signup">Sign Up</a>
+    </ul>
   </nav>
 );
 

@@ -18,13 +18,6 @@
     {
       "name": "Our Vision",
       "path": "ourVision"
-    },
-    {
-      "name": "Login",
-      "path": "/login"
-    },
-    {
-    "name": "Sign up",
-    "path": "/signup"
     }
+    
   ]
