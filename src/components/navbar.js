@@ -1,6 +1,7 @@
 import React from "react";
 import DynamicLink from "./dynamic-link";
-import NavLinks from "../data/nav-links.json";
+import NavLinksLeft from "../data/nav-links-left.json";
+import NavLinksRight from "../data/nav-links-right.json";
 
 
 const Nav = () => (
@@ -8,20 +9,27 @@ const Nav = () => (
     <DynamicLink to="/" className=" nav__logo">
     </DynamicLink>
 
-    <ul className="nav__list">
-      {NavLinks.map((link, index) => {
+    <ul className="nav__list__left">
+      {NavLinksLeft.map((link, index) => {
         return (
-          <li key={`nav-item-${index}`} className="nav__item">
-            <DynamicLink className="nav__link" to={link.path}>
+          <li key={`nav-item-${index}`} className="nav__item__left">
+            <DynamicLink className="nav__link__left" to={link.path}>
               {link.name}
             </DynamicLink>
           </li>
         );
       })}
     </ul>
-    <ul>
-      <a href="/login">Log In</a>
-      <a href="/signup">Sign Up</a>
+    <ul className="nav__list__right">
+      {NavLinksRight.map((link, index) => {
+        return (
+          <li key={`nav-item-${index}`} className="nav__item__right">
+            <DynamicLink className="nav__link__right" to={link.path}>
+              {link.name}
+            </DynamicLink>
+          </li>
+        );
+      })}
     </ul>
   </nav>
 );
