@@ -1,14 +1,34 @@
-.SignUp-bigBox {
+.signup-container{
   padding: 75px 3%;
   margin-right: 5%;
   margin-bottom: 5%;
-  border: 5px solid red;
   background-color: white;
-  text-align: center;
+  justify-content: center;
+
+  //$60 offer..
   .sign-up-title {
-    color: orange;
+    color: #ED7D21;
+    text-align: center;
+    justify-content: center;
   }
+
+  //enter your email and password
   .sign-up-subtitle {
+    padding:1rem;
+    text-align: center;
     color: grey;
+  }
+
+  .row {
+    padding: 1rem;
+  }
+
+  .how-it-works {
+    text-transform: uppercase;
+    color:  #ED7D21;
+  }
+  .login {
+    text-transform: uppercase;
+    color:  #ED7D21;
   }
 }
