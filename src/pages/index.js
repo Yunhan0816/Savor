@@ -15,11 +15,14 @@ const App = () =>{
     <div className="page-body">
       <div className="home">
         <section className="start-section">
-          <h1>
-            The meal kit everyone relies on
-          </h1>
-          <button>Learn More</button>
-
+          <div className="textbox">
+            <h1>
+              The meal kit everyone relies on.
+            </h1>
+            <div className="learn-more-container">
+              <button>Learn More</button>
+            </div>
+          </div>
         </section>
       </div>
     </div>

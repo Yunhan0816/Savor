@@ -1,7 +1,46 @@
+// import font
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
+
 .start-section {
-  position: relative;
-  padding-top: 100px;
-  padding: 90px 0px 0px 5.5%;
-  // text-align: center;
+  padding: 5rem;
   margin: auto;
+  background-color: #bb7a44; // temporary, need to replace with background image
+}
+
+// container of slogan and learn more button
+.textbox {
+  display: grid;
+  grid-template-areas:
+    'slogan'
+    'btnLearnMore';
+  grid-gap: 2rem;
+  justify-content: center;
+}
+
+//slogan
+.start-section h1 {
+  grid-area: 'slogan';
+  color: white;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  width: 30rem;
+  text-align: center;
+}
+
+.learn-more-container {
+  grid-area: 'btnLearnMore';
+  justify-content: center;
+  text-align: center;
+}
+
+//learn more button
+.learn-more-container button {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  background-color: #ED7D21;
+  width: 10rem;
+  height: 3rem;
+  outline: none;
 }
