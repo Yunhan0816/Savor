@@ -1,10 +1,7 @@
 import React from "react";
 
 const SignUpStart = () => (
-
-    // <div className="signup-container">
-    //   <h1 className="sign-up-title">$60 Offer - Get $20 Off Each of Your First 3 Boxes!</h1>
-    // </div>
+  
     <div className="signup-container">
 
       <h2 className="sign-up-title">$60 Offer - Get $20 Off Each of Your First 3 Boxes!</h2>
@@ -21,7 +18,7 @@ const SignUpStart = () => (
         <div className="col-12 col-md-3 email-container">
           <h5 className="titleEmail">Email</h5>
           <input className="inputEmail" type="email"/>
-          <button className="btnSignUp">Sign Up</button>
+          <button className="btnSignUp" > Sign Up </button>
         </div>
 
       </div>
