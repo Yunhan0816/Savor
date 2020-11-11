@@ -1,8 +1,7 @@
 .signup-container{
-  padding: 75px 3%;
-  margin-right: 5%;
-  margin-bottom: 5%;
-  background-color: white;
+  padding: 8rem;
+  background-color: white; 
+  opacity: 0.95;
   justify-content: center;
 
   //$60 offer..
@@ -19,6 +18,7 @@
     color: grey;
   }
 
+  //how it works & email section container
   .row {
     padding: 1rem;
   }
@@ -26,9 +26,34 @@
   .how-it-works {
     text-transform: uppercase;
     color:  #ED7D21;
+    padding-right: 1rem;
   }
-  .login {
-    text-transform: uppercase;
-    color:  #ED7D21;
+
+  .email-container {
+    display: grid;
+    grid-template-areas: 'input' 'btnSignUp';
+    grid-gap: 1rem;
+
+    .titleEmail {
+      text-transform: uppercase;
+      color:  #ED7D21;
+    }
+    .inputEmail {
+      grid-area:'input';
+      width:18rem;
+    }
+  
+    .btnSignUp {
+      grid-area:'btnSignUp';
+      outline: none;
+      font-weight: 600;
+      color: white;
+      text-transform: uppercase;
+      background-color: #ED7D21;
+      height: 2rem;
+      width:18rem;
+
+    }
   }
+  
 }
