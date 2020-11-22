@@ -4,10 +4,10 @@ import Meal from "../components/mealPage/Meal"
 import Layout from "../components/layout";
 export default () => (
   <Layout>
-    <SignUp />
+    <MealDashboard />
   </Layout>
 );
-const SignUp = () => {
+const MealDashboard = () => {
   return (
     <div className="page-body">
       <div className="meal-dashboard">

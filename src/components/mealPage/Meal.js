@@ -1,5 +1,7 @@
 import React from "react";
-
+import MealPlan from "../mealPage/MealPlan"
+import Recommendation from "../mealPage/Recommendation"
+import ThirdColumn from "../mealPage/ThirdColumn"
 const Meal = () => (
   
     <div className="mealpage-container">
@@ -11,33 +13,20 @@ const Meal = () => (
       <div className="row">
 
         <div className="col-12 col-md-4 mealplan">
-         <div className="mealplan-title">Meal Plan</div>
-         <div classname="mealplan-date">Sunday, 24 May</div>
+          <MealPlan />
         </div>
 
         <div className="col-12 col-md-3 recommendations">
-        <div className="recommendation-title">Recommendations</div>
- 
-         </div>  
-         
-          <div className="col-12 col-md-4 thirdcolumn ">
-         <div className="budget">
-         <div className="budget-title">Recommendations</div>
+         <Recommendation />
+         </div>
+         <div className="col-12 col-md-4 thirdcolumn ">
 
-         </div>
-         <div className="groupSize">
-         <div className="groupsize-title">Group Size</div>
-        
-         </div>
-         <div className="dietaryRes">
-         <div className="dietary-title">Dietary Restrictions</div>
+          <ThirdColumn />
+          </div>
 
-         </div>
-         </div>
         </div>
         <br/>
         <button className="btnSignUp" >Order </button>
-
       </div>
 
   
