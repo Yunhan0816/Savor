@@ -1,59 +1,93 @@
-.signup-container{
-  padding: 8rem;
+.container{
+  padding: 4rem;
   background-color: white; 
   opacity: 0.95;
   justify-content: center;
+  width: 40rem;
+  
 
-  //$60 offer..
+  //SIGN UP
   .sign-up-title {
     color: #ED7D21;
     text-align: center;
+    text-transform: uppercase;
     justify-content: center;
   }
 
-  //enter your email and password
+  //Sign up with your email or phone number and create a password to get started.
   .sign-up-subtitle {
     padding:1rem;
     text-align: center;
-    color: grey;
+    color:  #757575;
   }
 
-  //how it works & email section container
-  .row {
-    padding: 1rem;
-  }
-
-  .how-it-works {
+  .titleEmail {
     text-transform: uppercase;
-    color:  #ED7D21;
-    padding-right: 1rem;
+    color:  #757575;
   }
 
-  .email-container {
-    display: grid;
-    grid-template-areas: 'input' 'btnSignUp';
-    grid-gap: 1rem;
+  .titlePhoneNumber {
+    text-transform: uppercase;
+    color:  #757575;
+  }
 
-    .titleEmail {
-      text-transform: uppercase;
-      color:  #ED7D21;
-    }
-    .inputEmail {
-      grid-area:'input';
-      width:18rem;
-    }
-  
-    .btnSignUp {
-      grid-area:'btnSignUp';
+  .titlePassword {
+    text-transform: uppercase;
+    color:  #757575;
+  }
+
+  .textRememberMe {
+    color:  #757575;
+
+  }
+  .btnSignUp {
       outline: none;
       font-weight: 600;
       color: white;
       text-transform: uppercase;
       background-color: #ED7D21;
-      height: 2rem;
-      width:18rem;
-
+      padding: 0.5rem;
+      margin: 1rem 0rem;
+      width: 100%
     }
-  }
+
+
+  // //how it works & email section container
+  // .row {
+  //   padding: 1rem;
+  // }
+
+  // .how-it-works {
+  //   text-transform: uppercase;
+  //   color:  #ED7D21;
+  //   padding-right: 1rem;
+  // }
+
+  // .email-container {
+  //   display: grid;
+  //   grid-template-areas: 'input' 'btnSignUp';
+  //   grid-gap: 1rem;
+
+  //   .titleEmail {
+  //     text-transform: uppercase;
+  //     color:  #ED7D21;
+  //   }
+  //   .inputEmail {
+  //     grid-area:'input';
+  //     width:18rem;
+  //   }
+  
+  //   .btnSignUp {
+  //     grid-area:'btnSignUp';
+  //     outline: none;
+  //     font-weight: 600;
+  //     color: white;
+  //     text-transform: uppercase;
+  //     background-color: #ED7D21;
+  //     height: 2rem;
+  //     width:18rem;
+
+  //   }
+  // }
   
 }
