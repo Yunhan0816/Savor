@@ -1,12 +1,79 @@
 .mealpage-container {
-  .mealplan,
-  .recommendations,
-  .budget,
-  .groupSize,
-  .dietaryRes {
-    background-color: white;
-    border-radius: 5px;
-    margin-left: 7px;
-    margin-bottom: 7px;
+
+  //page title (Meal Plan)
+  .mealpage-title {
+    color: white;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+    margin: 2rem;
+    font-size: 3rem;
   }
+
+  //container for "use existing meal plan" w/ yes/no checkboxes
+  .container{
+    //grid features (for aligning checkbox and "use existing meal plan")
+    display: grid;
+    grid-template-areas: 'left right';
+    grid-gap: 1rem;
+    align-items:center;
+    justify-items: center;
+
+    //others
+    padding: 1.5rem;
+    background-color: #F8F8F8; 
+    opacity: 0.95;
+    justify-content: center;
+    width: 30rem;
+    text-align: center;
+    border-radius: 3px;
+
+    //use existing meal plan
+    .mealpage-subtitle {
+      grid-area: left;
+      color: #ED7D21;
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 800;
+      font-size: large;
+      margin: 0;
+    }
+
+    //yes/no checkboxes and their labels
+    .checkbox-container {
+      grid-area:right;
+      color: #757575;
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 800;
+    }
+    
+  }
+
+
+  // the three columns
+  .mealplan, .recommendations, .budget, .groupSize, .dietaryRes {
+    background-color: #F8F8F8;
+    border-radius: 3px;
+    margin: 2.5rem 1rem;
+    padding: 2rem 3rem;
+    opacity: 0.95;
+    justify-content:center;
+  }
+
+  //all columns title
+  .mealplan-title h2, .recommendation-title h2, .budget-title h2, .groupsize-title h2, .dietary-title h2 {
+    color: #ED7D21;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+    font-size: large;
+  }
+
+  //first column: Meal Plan  
+
+  //second column: Recommendations
+
+  
+
 }
+
+
+
