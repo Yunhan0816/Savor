@@ -48,8 +48,7 @@
     
   }
 
-
-  // the three columns
+  // the three columns basic layout
   .mealplan, .recommendations, .budget, .groupSize, .dietaryRes {
     background-color: #F8F8F8;
     border-radius: 3px;
@@ -60,16 +59,29 @@
   }
 
   //all columns title
-  .mealplan-title h2, .recommendation-title h2, .budget-title h2, .groupsize-title h2, .dietary-title h2 {
+  .mealplan-title h2, .recommendation-title h2, .budget-title h2, .groupSize-title h2, .dietaryRes-title h2 {
     color: #ED7D21;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 800;
     font-size: large;
   }
 
-  //first column: Meal Plan  
+  //all columns settings icon layout with title (first row)  
+
+  .mealplan-firstrow-container, .recommendation-firstrow-container, .budget-firstrow-container, .groupSize-firstrow-container, .dietaryRes-firstrow-container {
+    padding-bottom: 3rem;
+  }
+  .mealplan-title, .recommendation-title, .budget-title, .groupSize-title, .dietaryRes-title {
+    float: left;
+  }
+  .settings-icon {
+    float: right;
+  }
 
   //second column: Recommendations
+
+  //third column: Budget Size
+  
 
   
 
