@@ -46,7 +46,7 @@ const App = () =>{
 
 
 
-                    <button><a href="/preferences">Next</a></button>
+                    <button><a href="/subscription">Next</a></button>
                 </section>
             </div>
         </div>
