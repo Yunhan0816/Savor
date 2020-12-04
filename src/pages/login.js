@@ -17,7 +17,7 @@ class Login extends React.Component {
 
     render() {
         if (isLoggedIn()) {
-            navigate(`/preferences`)
+            navigate(`/profile`)
         }
 
         return (
@@ -28,7 +28,7 @@ class Login extends React.Component {
                 <form method="post"
                     onSubmit={event => {
                         this.handleSubmit(event)
-                        navigate(`/preferences`)
+                        navigate(`/profile`)
                     }}>
                     
                     {/* email */}
