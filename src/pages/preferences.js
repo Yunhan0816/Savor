@@ -13,7 +13,7 @@ const App = () =>{
             <div className="home">
                 <section className="start-section">
                     <h1>
-                        This will be a user's profile page.
+This is User Preferences Page
                     </h1>
                 </section>
             </div>
