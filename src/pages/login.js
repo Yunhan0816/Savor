@@ -14,7 +14,6 @@ export default () => (
           <section className="start-section">
        <LogInStart/>
           </section>
-        
         </div>
       </div>
     );
