@@ -27,22 +27,6 @@ const SignUpStart = () => (
         </div>
         <button type="submit" class="btnSignUp">Sign Up</button>
       </form>
-
-      {/* <div className="row">
-
-        <div className="col-12 col-md-7">
-          <h5 className="how-it-works">How it works</h5>
-          three boxes down here
-        </div>
-
-        <div className="col-12 col-md-3 email-container">
-          <h5 className="titleEmail">Email</h5>
-          <input className="inputEmail" type="email"/>
-          <button className="btnSignUp" > Sign Up </button>
-        </div>
-
-      </div> */}
-
   </div>
 );
 
