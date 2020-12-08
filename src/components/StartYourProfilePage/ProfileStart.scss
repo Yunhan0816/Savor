@@ -19,4 +19,27 @@ width: 1500px;
 
 .row{
     color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.input{
+    width: 200px;
+    margin-left: 20px;
+}
+
+.secondinput{
+    width: 200px;
+}
+
+.thirdinput{
+    width: 200px;
+    margin-right: 110px;
+}
+
+.fourthinput{
+    width: 200px;
+    margin-right:110px;
 }

@@ -23,9 +23,9 @@ class ProfileStart extends React.Component {
                                 </div>  
                             </div>
                             <div className="row">
-                                <input type="text" />
-                                <input type="text" />
-                                <input type="text" />
+                                <input type="text" className = "input"/>
+                                <input type="text" className = "secondinput"/>
+                                <input type="text" className = "thirdinput" />
                             </div>
                             <div className="row">
                                 <div className="col-12 col-md-4 ">
@@ -36,10 +36,12 @@ class ProfileStart extends React.Component {
                                 </div>          
                            </div>
                            <div className="row">
-                                <input type="text" />
-                                <input type="text" />
+                                <input type="text" className = "input"/>
+                                <input type="text" className = "fourthinput"/>
                             </div>
-                           <div className = "row">How did you hear about us?</div>
+                           <div className = "row">
+                               How did you hear about us?
+                            </div>
                         </div>
                         <br />
                     </div>
