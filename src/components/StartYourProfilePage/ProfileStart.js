@@ -1,4 +1,5 @@
 import React from "react"
+import style from "./ProfileStart.scss"
 
 class ProfileStart extends React.Component {
     render() {
@@ -11,29 +12,38 @@ class ProfileStart extends React.Component {
                         <h2>Please start your profile</h2>
                         <div className="innerBox">
                             <div className="row">
-                              <div className="col-12 col-md-4 ">
-                                  First Name
-                                  </div>    
-                                  <div className="col-12 col-md-4 ">
-                                      Last Name
-                                  </div>   
-                                  <div className="col-12 col-md-4 ">
-                                  Date of Birth
-                                  </div>  
-                                  </div>
+                                <div className="col-12 col-md-4 ">
+                                    First Name
+                                </div>    
+                                <div className="col-12 col-md-4 ">
+                                    Last Name
+                                </div>   
+                                <div className="col-12 col-md-4 ">
+                                    Date of Birth
+                                </div>  
+                            </div>
                             <div className="row">
-                            <div className="col-12 col-md-4 ">
-                                  Phone
-                                  </div>    
-                                  <div className="col-12 col-md-4 ">
+                                <input type="text" />
+                                <input type="text" />
+                                <input type="text" />
+                            </div>
+                            <div className="row">
+                                <div className="col-12 col-md-4 ">
+                                    Phone
+                                </div>    
+                                <div className="col-12 col-md-4 ">
                                     Email
-                                  </div>          
+                                </div>          
                            </div>
-                        <div>How did you hear about us?</div>
+                           <div className="row">
+                                <input type="text" />
+                                <input type="text" />
+                            </div>
+                           <div className = "row">How did you hear about us?</div>
                         </div>
                         <br />
                     </div>
-                    <button><a href="/subscription">Next</a></button>
+                    <button type="submit" class="nextbutton">Next</button>
         </div>
         )
     }
