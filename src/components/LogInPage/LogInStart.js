@@ -1,6 +1,7 @@
 import React from "react"
 import { navigate } from "gatsby"
 import { handleLogin, isLoggedIn } from "../../services/auth"
+import style from "./LogInStart.scss"
 const firebase = require("firebase/app");
 
 // Add the Firebase products that you want to use
@@ -50,7 +51,7 @@ class LogInStart extends React.Component {
 
                     {/* log in */}
                     <button type="submit" class="btnLogin">Log In</button>
-                    <input type="submit" value="Log in with Google" />
+                    <input type="submit" class="btnLogin" value="Log in with Google" />
 
                 </form>
             </div>
