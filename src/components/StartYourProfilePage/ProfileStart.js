@@ -1,7 +1,89 @@
 import React from "react"
+import { auth, db} from "../../services/auth";
+
+
 import style from "./ProfileStart.scss"
 
 class ProfileStart extends React.Component {
+    constructor(props) {
+        super(props);
+    
+        this.state = {
+          firstName: '',
+          lastName: '',
+          dob:'',
+          phone:'',
+          email:'',
+          hearAboutUs:'',
+          currentUser: {},
+        }
+    
+        this.userRef = db.collection('users');
+        this.handleFN = this.handleFN.bind(this);
+        this.handleLN = this.handleLN.bind(this);
+        this.handleDOB = this.handleDOB.bind(this);
+        this.handlePhone = this.handleDOB.bind(this);
+        this.handleEmail = this.handleEmail.bind(this);
+        this.handleHearUs = this.handleHearUs.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+      }
+
+      componentDidMount() {
+        auth.onAuthStateChanged((currentUser) => {
+          this.setState({ currentUser: currentUser || {} });      
+          
+          if (currentUser) {
+            // Init current user Refs
+            this.userRef = db.collection('users').child(currentUser.uid);
+    
+          } else {
+            this.setState({ firstName: '', lastName: '',dob:'', phone:'', email:'', hearAboutUs:'' });
+          }
+        });
+      }
+
+      handleFN(event) {
+        const firstName = event.target.value;
+        this.setState({ firstName })
+      }
+
+      handleLN(event) {
+        const lastName = event.target.value;
+        this.setState({ lastName })
+      }
+      
+      handleDOB(event) {
+        const dob = event.target.value;
+        this.setState({ dob })
+      }
+
+      handlePhone(event) {
+        const phone = event.target.value;
+        this.setState({ phone })
+      }
+      handleEmail(event) {
+        const email = event.target.value;
+        this.setState({email })
+      }
+      handleHearUs(event) {
+        const hearAboutUs = event.target.value;
+        this.setState({ hearAboutUs })
+      } 
+      handleSubmit(event) {
+        event.preventDefault();
+        const {currentUser, firstName, lastName, dob, phone, email, hearAboutUs } = this.state;
+        this.userRef.add({
+          uid: currentUser.uid,
+          firstName: firstName,
+          lastName: lastName,
+          dob: dob,
+          phone: phone,
+          email: email,
+          hearAboutUs: hearAboutUs
+        });
+      }
+    
+
     render() {
         return (
         <div className="container">
@@ -22,9 +104,9 @@ class ProfileStart extends React.Component {
                                 </div>  
                             </div>
                             <div className="row">
-                                <input type="text" className = "input"/>
-                                <input type="text" className = "secondinput"/>
-                                <input type="text" className = "thirdinput" />
+                                <input type="text" className = "input" onChange={this.handleFN}/>
+                                <input type="text" className = "secondinput" onChange={this.handleLN}/>
+                                <input type="text" className = "thirdinput" onChange={this.handleDOB}/>
                             </div>
                             <div className = "Space"></div>
                             <div className="row">
@@ -36,8 +118,8 @@ class ProfileStart extends React.Component {
                                 </div>          
                            </div>
                            <div className="row">
-                                <input type="text" className = "input"/>
-                                <input type="text" className = "fourthinput"/>
+                                <input type="text" className = "input" onChange={this.handlePhone}/>
+                                <input type="text" className = "fourthinput" onChange={this.handleEmail}/>
                             </div>
                             <div className = "Space"></div>
                            <div className = "secondrow">
@@ -55,7 +137,7 @@ class ProfileStart extends React.Component {
                         </div>
                         <br />
                     </div>
-                    <button type="submit" class="nextbutton">Next</button>
+                    <button type="submit" class="nextbutton" onClick={this.handleSubmit}><a href="subscription">Next</a></button>
         </div>
         )
     }
