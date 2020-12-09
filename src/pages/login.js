@@ -1,5 +1,4 @@
 import React from "react"
-import { navigate } from "gatsby"
 import LogInStart from "../components/LogInPage/LogInStart"
 import Layout from "../components/layout";
 export default () => (

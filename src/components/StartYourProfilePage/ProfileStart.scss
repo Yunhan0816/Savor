@@ -1,0 +1,74 @@
+.start{
+    text-align: center;
+    color: #ED7D21;
+}
+
+.below{
+    text-align: center;
+    color: gray;
+}
+
+.Space{
+    height: 25px;
+}
+
+.LastSpace{
+    height: 50px;
+}
+
+.nextbutton{
+    outline: none;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    background-color: #ED7D21;
+    padding: 0.5rem;
+    margin: 1rem 0rem;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container{
+width: 1500px;
+}
+
+.outerBox{
+    width: 1000px;
+}
+
+.row{
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.secondrow{
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.input{
+    width: 200px;
+    margin-left: 20px;
+}
+
+.secondinput{
+    width: 200px;
+}
+
+.thirdinput{
+    width: 200px;
+    margin-right: 110px;
+}
+
+.fourthinput{
+    width: 200px;
+    margin-right:110px;
+}
