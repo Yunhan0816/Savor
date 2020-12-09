@@ -6,8 +6,10 @@ class ProfileStart extends React.Component {
         return (
         <div className="container">
                     <div className="outerBox">
-                        <h2>Please start your profile</h2>
+                        <h2 className = "start">Please start your profile</h2>
+                        <p className = "below"> (fill out sections below) </p>
                         <div className="innerBox">
+                            <div className = "Space"></div>
                             <div className="row">
                                 <div className="col-12 col-md-4 ">
                                     First Name
@@ -24,6 +26,7 @@ class ProfileStart extends React.Component {
                                 <input type="text" className = "secondinput"/>
                                 <input type="text" className = "thirdinput" />
                             </div>
+                            <div className = "Space"></div>
                             <div className="row">
                                 <div className="col-12 col-md-4 ">
                                     Phone
@@ -36,6 +39,7 @@ class ProfileStart extends React.Component {
                                 <input type="text" className = "input"/>
                                 <input type="text" className = "fourthinput"/>
                             </div>
+                            <div className = "Space"></div>
                            <div className = "secondrow">
                                How did you hear about us?
                             </div>
@@ -47,6 +51,7 @@ class ProfileStart extends React.Component {
                                     <option > Other </option>
                                 </select>
                             </div>
+                            <div className = "LastSpace"></div>
                         </div>
                         <br />
                     </div>
