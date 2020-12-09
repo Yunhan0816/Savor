@@ -1,4 +1,19 @@
 import React from "react"
+import {db} from "../../services/auth";
+
+const printRecipes = () => {
+  var recipes = [];
+    db.collection("Recipes").get().then(function(querySnapshot) {
+      querySnapshot.forEach(function(doc) {
+        // doc.data() is never undefined for query doc snapshots
+        console.log(doc.id, " => ", doc.data().dietaryRes);
+        recipes.push(doc.data().dietaryRes);
+      });
+     });
+     console.log(recipes);
+     return recipes;
+}
+
 const Recommendation = () => (
     <div>
 
@@ -19,7 +34,7 @@ const Recommendation = () => (
           <div className="col-5">Sorting</div>
         </div>
 
-        <div className="receipe">Receipe 1</div>
+        <div className="receipe">Receipe 1: {printRecipes()[0]}</div>
 
         <br />
 
