@@ -5,9 +5,6 @@ class ProfileStart extends React.Component {
     render() {
         return (
         <div className="container">
-                    <h1>
-                    Welcome!
-                    </h1>
                     <div className="outerBox">
                         <h2>Please start your profile</h2>
                         <div className="innerBox">
@@ -39,8 +36,16 @@ class ProfileStart extends React.Component {
                                 <input type="text" className = "input"/>
                                 <input type="text" className = "fourthinput"/>
                             </div>
-                           <div className = "row">
+                           <div className = "secondrow">
                                How did you hear about us?
+                            </div>
+                            <div className = "secondrow"> 
+                                <select>
+                                    <option > Through a Friend </option>
+                                    <option > Social Media </option>
+                                    <option > Search Engine(Google, Yahoo, etc.) </option>
+                                    <option > Other </option>
+                                </select>
                             </div>
                         </div>
                         <br />

@@ -13,6 +13,9 @@ const App = () =>{
         <div className="page-body">
             <div className="home">
                 <section className="start-section">
+                    <h1>
+                    Welcome! 
+                    </h1>
                     <ProfileStart/>
                 </section>
             </div>
