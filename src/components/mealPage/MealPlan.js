@@ -1,7 +1,7 @@
 import React from "react"
 
 const MealPlan = ()=>(
-    <div>
+    <div className="mealplan-section">
 
         <div className="mealplan-firstrow-container">
             <div className="mealplan-title">

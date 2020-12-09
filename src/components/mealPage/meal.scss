@@ -1,27 +1,26 @@
 .mealpage-container {
-
   //page title (Meal Plan)
   .mealpage-title {
     color: white;
     text-align: center;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: "Nunito Sans", sans-serif;
     font-weight: 800;
     margin: 2rem;
     font-size: 3rem;
   }
 
   //container for "use existing meal plan" w/ yes/no checkboxes
-  .container{
+  .container {
     //grid features (for aligning checkbox and "use existing meal plan")
     display: grid;
-    grid-template-areas: 'left right';
+    grid-template-areas: "left right";
     grid-gap: 1rem;
-    align-items:center;
+    align-items: center;
     justify-items: center;
 
     //others
     padding: 1.5rem;
-    background-color: #F8F8F8; 
+    background-color: #f8f8f8;
     opacity: 0.95;
     justify-content: center;
     width: 30rem;
@@ -31,8 +30,8 @@
     //use existing meal plan
     .mealpage-subtitle {
       grid-area: left;
-      color: #ED7D21;
-      font-family: 'Nunito Sans', sans-serif;
+      color: #ed7d21;
+      font-family: "Nunito Sans", sans-serif;
       font-weight: 800;
       font-size: large;
       margin: 0;
@@ -40,38 +39,53 @@
 
     //yes/no checkboxes and their labels
     .checkbox-container {
-      grid-area:right;
+      grid-area: right;
       color: #757575;
-      font-family: 'Nunito Sans', sans-serif;
+      font-family: "Nunito Sans", sans-serif;
       font-weight: 800;
     }
-    
   }
 
   // the three columns basic layout
-  .mealplan, .recommendations, .budget, .groupSize, .dietaryRes {
-    background-color: #F8F8F8;
+  .mealplan,
+  .recommendations,
+  .budget,
+  .groupSize,
+  .dietaryRes {
+    background-color: #f8f8f8;
     border-radius: 3px;
     margin: 2.5rem 1rem;
     padding: 2rem 3rem;
     opacity: 0.95;
-    justify-content:center;
+    justify-content: center;
   }
 
   //all columns title
-  .mealplan-title h2, .recommendation-title h2, .budget-title h2, .groupSize-title h2, .dietaryRes-title h2 {
-    color: #ED7D21;
-    font-family: 'Nunito Sans', sans-serif;
+  .mealplan-title h2,
+  .recommendation-title h2,
+  .budget-title h2,
+  .groupSize-title h2,
+  .dietaryRes-title h2 {
+    color: #ed7d21;
+    font-family: "Nunito Sans", sans-serif;
     font-weight: 800;
     font-size: large;
   }
 
-  //all columns settings icon layout with title (first row)  
+  //all columns settings icon layout with title (first row)
 
-  .mealplan-firstrow-container, .recommendation-firstrow-container, .budget-firstrow-container, .groupSize-firstrow-container, .dietaryRes-firstrow-container {
+  .mealplan-firstrow-container,
+  .recommendation-firstrow-container,
+  .budget-firstrow-container,
+  .groupSize-firstrow-container,
+  .dietaryRes-firstrow-container {
     padding-bottom: 3rem;
   }
-  .mealplan-title, .recommendation-title, .budget-title, .groupSize-title, .dietaryRes-title {
+  .mealplan-title,
+  .recommendation-title,
+  .budget-title,
+  .groupSize-title,
+  .dietaryRes-title {
     float: left;
   }
   .settings-icon {
@@ -81,11 +95,12 @@
   //second column: Recommendations
 
   //third column: Budget Size
-  
-
-  
-
 }
 
+.recommendation-section {
+  color: black;
+}
 
-
+.mealplan-section {
+  color: black;
+}
