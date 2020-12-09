@@ -17,7 +17,7 @@ class LogInStart extends React.Component {
 
     render() {
         if (isLoggedIn()) {
-            navigate(`/profile`)
+            navigate(`/login`)
         }
 
         return (
