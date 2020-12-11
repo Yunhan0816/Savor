@@ -36,7 +36,7 @@ const Meal = () => (
         </div>
 
         <div className="col-12 col-md-3 recommendations">
-            <Recommendation2 />
+            <Recommendation2/>
         </div>
 
          <div className="col-12 col-md-4 thirdcolumn ">

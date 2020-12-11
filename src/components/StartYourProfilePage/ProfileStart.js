@@ -137,7 +137,7 @@ class ProfileStart extends React.Component {
                         </div>
                         <br />
                     </div>
-                    <button type="submit" class="nextbutton" onClick={this.handleSubmit}><a href="subscription">Next</a></button>
+                    <a href="/subscription"><button type="submit" class="nextbutton" onClick={this.handleSubmit} onClick="location.href='/subscription';" >Next</button></a>
         </div>
         )
     }

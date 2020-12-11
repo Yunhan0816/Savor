@@ -47,16 +47,13 @@
   }
 
   // the three columns basic layout
-  .mealplan, .recommendations, .budget, .groupSize, .dietaryRes {
-    background-color: #F8F8F8;
+  .mealplan,
+  .recommendations,
+  .budget,
+  .groupSize,
+  .dietaryRes {
+    background-color: #f8f8f8;
     color: black;
-    border-radius: 3px;
-    margin: 2.5rem 1rem;
-    padding: 2rem 3rem;
-    opacity: 0.95;
-    justify-content:center;
-  }
-
     border-radius: 3px;
     margin: 2.5rem 1rem;
     padding: 2rem 3rem;
@@ -64,49 +61,56 @@
     justify-content: center;
   }
 
-  .row { // for filter and sorting of the recommendations column
-    color: black;
-    font-size: 1rem;
-    margin-right: 1rem;
-    padding: 1rem 0;
-  }
-
-  //all columns title
-  .mealplan-title h2,
-  .recommendation-title h2,
-  .budget-title h2,
-  .groupSize-title h2,
-  .dietaryRes-title h2 {
-    color: #ed7d21;
-    font-family: "Nunito Sans", sans-serif;
-    font-weight: 800;
-    font-size: large;
-  }
-
-  //all columns settings icon layout with title (first row)
-
-  .mealplan-firstrow-container,
-  .recommendation-firstrow-container,
-  .budget-firstrow-container,
-  .groupSize-firstrow-container,
-  .dietaryRes-firstrow-container {
-    padding-bottom: 3rem;
-  }
-  .mealplan-title,
-  .recommendation-title,
-  .budget-title,
-  .groupSize-title,
-  .dietaryRes-title {
-    float: left;
-  }
-  .settings-icon {
-    float: right;
-  }
-
-  //second column: Recommendations
-
-  //third column: Budget Size
+  border-radius: 3px;
+  margin: 2.5rem 1rem;
+  padding: 2rem 3rem;
+  opacity: 0.95;
+  justify-content: center;
 }
+
+.row {
+  // for filter and sorting of the recommendations column
+  color: black;
+  font-size: 1rem;
+  margin-right: 1rem;
+  padding: 1rem 0;
+}
+
+//all columns title
+.mealplan-title h2,
+.recommendation-title h2,
+.budget-title h2,
+.groupSize-title h2,
+.dietaryRes-title h2 {
+  color: #ed7d21;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 800;
+  font-size: large;
+}
+
+//all columns settings icon layout with title (first row)
+
+.mealplan-firstrow-container,
+.recommendation-firstrow-container,
+.budget-firstrow-container,
+.groupSize-firstrow-container,
+.dietaryRes-firstrow-container {
+  padding-bottom: 3rem;
+}
+.mealplan-title,
+.recommendation-title,
+.budget-title,
+.groupSize-title,
+.dietaryRes-title {
+  float: left;
+}
+.settings-icon {
+  float: right;
+}
+
+//second column: Recommendations
+
+//third column: Budget Size
 
 .recommendation-section {
   color: black;
