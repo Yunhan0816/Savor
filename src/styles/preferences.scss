@@ -1,0 +1,64 @@
+.preferences-container {
+    // set your preferences.
+    .setPreferences-title {
+        color: white;
+        text-align: center;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 800;
+        margin: 2rem;
+        font-size: 3rem;
+    }
+    
+    //container for preferences
+    .container{
+        padding: 4rem;
+        background-color: white; 
+        opacity: 0.95;
+        justify-content: center;
+        max-width: 40rem;
+    } 
+
+    //styling for the three titles: budget, group size, dietary restrictions
+    .budget-title, .groupSize-title, .dietaryRes-title {
+        padding: 1rem 1rem 1rem 0rem;
+        color: #ED7D21;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 800;
+        font-size: x-large;
+    }
+
+
+    //add button (not the add icon)
+    .addBtn {
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 600;
+        color: white;
+        text-transform: uppercase;
+        background-color: #ED7D21;
+        width: 10rem;
+        height: 3rem;
+        margin-top: 1rem;
+        outline: none;
+    }
+
+
+    //Next Button
+    .nextBtn {
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 600;
+        font-size: 1.5rem;
+        color: white;
+        text-transform: uppercase;
+        background-color: #ED7D21;
+        width: 15rem;
+        height: 5rem;
+        margin-top: 3rem;
+        outline: none;
+    }
+
+    // Container for Next Button to center it in the page
+    .container-button {
+        text-align: center;
+    }
+
+}

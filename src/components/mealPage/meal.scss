@@ -47,17 +47,28 @@
   }
 
   // the three columns basic layout
-  .mealplan,
-  .recommendations,
-  .budget,
-  .groupSize,
-  .dietaryRes {
-    background-color: #f8f8f8;
+  .mealplan, .recommendations, .budget, .groupSize, .dietaryRes {
+    background-color: #F8F8F8;
+    color: black;
+    border-radius: 3px;
+    margin: 2.5rem 1rem;
+    padding: 2rem 3rem;
+    opacity: 0.95;
+    justify-content:center;
+  }
+
     border-radius: 3px;
     margin: 2.5rem 1rem;
     padding: 2rem 3rem;
     opacity: 0.95;
     justify-content: center;
+  }
+
+  .row { // for filter and sorting of the recommendations column
+    color: black;
+    font-size: 1rem;
+    margin-right: 1rem;
+    padding: 1rem 0;
   }
 
   //all columns title
