@@ -95,7 +95,7 @@ class  Recommendation2 extends React.Component {
             <div className="receipe">Receipe 3
             <div className="recipe-content">
               
-            {this.state.recipes[3].recipeName}
+           {this.state.recipes[3].recipeName}
            <br /> <br/>
 
            {this.state.recipes[3].costPerIngredients}
