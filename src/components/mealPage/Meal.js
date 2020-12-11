@@ -1,6 +1,6 @@
 import React from "react";
 import MealPlan from "../mealPage/MealPlan"
-import Recommendation2 from "../mealPage/Recommendation2"
+import Recommendation from "./Recommendation"
 import ThirdColumn from "../mealPage/ThirdColumn"
 const Meal = () => (
   
@@ -36,7 +36,7 @@ const Meal = () => (
         </div>
 
         <div className="col-12 col-md-3 recommendations">
-            <Recommendation2/>
+            <Recommendation/>
         </div>
 
          <div className="col-12 col-md-4 thirdcolumn ">
