@@ -8,7 +8,8 @@ class  Recommendation2 extends React.Component {
         super(props);
     
         this.state = {
-          recipes: []
+          recipes: [],
+          testRecipe: "Test" // this line of code was borrowed from Professor Dharmesh Tarapore
         }
         this.readRecipe = this.readRecipe.bind(this);
         this.recipeRf = db.collection('Recipes');
@@ -16,7 +17,7 @@ class  Recommendation2 extends React.Component {
 
       componentDidMount() {
           this.readRecipe()
-          console.log("i did it", this.recipes)
+          console.log("i did it", this.state)
       }
 
       readRecipe() {
@@ -26,14 +27,19 @@ class  Recommendation2 extends React.Component {
             const content = doc.data()
        
             result.push(content);
-            console.log(result)
+            // console.log(result)
             // this.recipes = result;
           });
        
          });
          const recipes = result;
-         this.setState({ recipes })
+         console.log(recipes);
+        //  this.setState({ recipes })
 
+        // this line of code was borrowed from Professor Dharmesh Tarapore
+        this.setState({recipes: recipes}, function() {
+          console.log("State: ", this.state)
+        });
       } 
     
 
@@ -58,7 +64,19 @@ class  Recommendation2 extends React.Component {
               <div className="col-5">Sorting</div>
             </div>
     
-            <div className="receipe">Receipe 1: {this.recipes}</div>
+    
+            <div className="receipe">Receipe 1
+            <br />
+            <div className="recipe-content">
+           
+            {this.state.recipes[0].recipeName}
+            <br /> <br/>
+            {this.state.recipes[0].dietaryRes}
+<br /> <br />
+            {this.state.recipes[0].ingredients}
+            <br />
+            </div>
+            </div>
     
             <br />
     
@@ -66,6 +84,14 @@ class  Recommendation2 extends React.Component {
           
             <br />
     
+            <div className="recipe-content">
+           
+           {this.state.recipes[2].recipeName}
+           <br /> <br/>
+
+           {this.state.recipes[2].ingredients}
+           <br />
+           </div>
             <div className="receipe">Receipe 3</div>
     
             <br />
