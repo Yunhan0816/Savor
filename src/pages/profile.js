@@ -1,5 +1,6 @@
 import Layout from "../components/layout";
 import ProfileStart from "../components/StartYourProfilePage/ProfileStart"
+import style from "../styles/profile.scss";
 import React from "react";
 
 export default () => (
@@ -13,7 +14,7 @@ const App = () =>{
         <div className="page-body">
             <div className="home">
                 <section className="start-section">
-                    <h1>
+                    <h1 className = "welcome">
                     Welcome! 
                     </h1>
                     <ProfileStart/>

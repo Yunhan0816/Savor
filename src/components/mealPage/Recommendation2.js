@@ -65,11 +65,11 @@ class  Recommendation2 extends React.Component {
             </div>
     
     
-            <div className="receipe">Receipe 1
+            <div className="receipe">{this.state.recipes[0].recipeName}
             <br />
             <div className="recipe-content">
            
-            {this.state.recipes[0].recipeName}
+            {/* {this.state.recipes[0].recipeName} */}
             <br /> <br/>
             {this.state.recipes[0].dietaryRes}
 <br /> <br />
@@ -80,25 +80,25 @@ class  Recommendation2 extends React.Component {
     
             <br />
     
-            <div className="receipe">Receipe 2</div>
+            <div className="receipe"> {this.state.recipes[1].recipeName}</div>
           
             <br />
     
             <div className="recipe-content">
            
-           {this.state.recipes[2].recipeName}
+           {/* {this.state.recipes[1].recipeName} */}
            <br /> <br/>
 
-           {this.state.recipes[2].ingredients}
+           {this.state.recipes[1].ingredients}
            <br />
            </div>
-            <div className="receipe">Receipe 3
+            <div className="receipe">{this.state.recipes[2].recipeName}
             <div className="recipe-content">
               
-           {this.state.recipes[3].recipeName}
+           {/* {this.state.recipes[3].recipeName} */}
            <br /> <br/>
 
-           {this.state.recipes[3].costPerIngredients}
+           {this.state.recipes[2].costPerIngredients}
            <br /> 
 </div>
             </div>
