@@ -27,18 +27,28 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    color: white;
 }
 
 a{
     color: white;
 }
 
-.container{
-width: 1500px;
+.firstcontainer{
+    position: relative;
+    width: 100px;
+    left: 50px;
 }
 
 .outerBox{
+    width: 1200px;
+}
+
+.innerBox{
     width: 1000px;
+    position: relative;
+    left: 90px;
 }
 
 .row{

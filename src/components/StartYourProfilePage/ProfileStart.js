@@ -86,7 +86,7 @@ class ProfileStart extends React.Component {
 
     render() {
         return (
-        <div className="container">
+        <div className="firstcontainer">
                     <div className="outerBox">
                         <h2 className = "start">Please start your profile</h2>
                         <p className = "below"> (fill out sections below) </p>
@@ -136,8 +136,8 @@ class ProfileStart extends React.Component {
                             <div className = "LastSpace"></div>
                         </div>
                         <br />
+                        <a href="/subscription"><button type="submit" class="nextbutton" onClick={this.handleSubmit} onClick="location.href='/subscription';" >Next</button></a>
                     </div>
-                    <a href="/subscription"><button type="submit" class="nextbutton" onClick={this.handleSubmit} onClick="location.href='/subscription';" >Next</button></a>
         </div>
         )
     }
