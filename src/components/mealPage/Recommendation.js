@@ -51,8 +51,8 @@ class  Recommendation2 extends Component {
             
     
             <div className="row">
-              <div className="col-5">Filter</div>
-              <div className="col-5">Sorting</div>
+              <div className="col-6" style={{color: "black",fontSize:"20px" }}>Filter</div>
+              <div className="col-6" style={{color: "black", fontSize: "20px"}}>Sorting</div>
             </div>
     
     {this.state.recipes.map((recipe, index) =>{
