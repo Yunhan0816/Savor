@@ -1,6 +1,25 @@
 import React from "react"
+import {db} from "../../services/auth";
+
+var printRecipes = () => {
+  var recipes = [];
+    db.collection("Recipes").get().then(async function(querySnapshot) {
+      querySnapshot.forEach(async function(doc) {
+        const content = await doc.data()
+        // console.log("I am called")
+        // console.log(content)
+        // console.log(doc.id, " => ", content);
+        recipes.push(content);
+        console.log(recipes)
+        return recipes;
+      });
+      // console.log(recipes)
+      // return recipes;
+     });
+}
+
 const Recommendation = () => (
-    <div>
+    <div className = "recommendation-section">
 
         <div className="recommendation-firstrow-container">
           <div className="recommendation-title">
@@ -19,7 +38,7 @@ const Recommendation = () => (
           <div className="col-5">Sorting</div>
         </div>
 
-        <div className="receipe">Receipe 1</div>
+        <div className="receipe">Receipe 1: {printRecipes()}</div>
 
         <br />
 
