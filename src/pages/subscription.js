@@ -1,5 +1,6 @@
 import Layout from "../components/layout";
 import React from "react";
+import style from "../styles/subscription.scss"
 
 export default () => (
     <Layout>
@@ -12,27 +13,35 @@ const App = () =>{
         <div className="page-body">
             <div className="home">
                 <section className="start-section">
-                    <h1>
+                    <h1 className = "header">
                         A Monthly meal kit personalized for you.
                     </h1>
 
                     <div className="outerBox">
-                        <h2>Choose your subscription</h2>
-                        <p>(Don't worry, you can change your subcription anytime)</p>
-
-                        <div className="row">
-                            <div className="col-12 col-md-6 smallBox">
-                                <h4>Free</h4>
-                                 </div>
-                                 <div className="col-12 col-md-6 smallBox">
-                                <h4>Premium</h4>
-                                 </div>
+                        <h2 className = "choose">Choose your subscription</h2>
+                        <p className = "worry">(Don't worry, you can change your subcription anytime)</p>
+                        <div className="FreePlan">
+                            <h4 className = "title">Free</h4>
+                            <h3 className = "price">$0.00</h3>
+                            <div className = "freetext">
+                                <p> - includes advertisements</p>
+                                <p> - Loren Ipsum</p>
+                                <p> - Loren Ipsum</p>
+                                <p> - Loren Ipsum</p>
+                            </div>
                         </div>
-
+                        <div className="PremiumPlan">
+                            <h4 className = "title">Free</h4>
+                                <h3 className = "price">$0.00</h3>
+                                <div className = "premiumtext">
+                                    <p> - includes advertisements</p>
+                                    <p> - Loren Ipsum</p>
+                                    <p> - Loren Ipsum</p>
+                                    <p> - Loren Ipsum</p>
+                                </div>
+                            </div>
                     </div>
-                    <button><a href="/preferences">Select</a></button>
-
-
+                    <button className = "Selectbutton"><a href="/preferences">SELECT</a></button>
                 </section>
             </div>
         </div>
