@@ -8,6 +8,7 @@ const SignUpStart = () => (
 
       <p className="sign-up-subtitle">Sign up with your email or phone number and create a password to get started.</p>
 
+      {/* https://getbootstrap.com/docs/4.0/components/forms/ */}
       <form>
         <div class="form-group"> 
           <label for="email_input" class="titleEmail">Email</label>
