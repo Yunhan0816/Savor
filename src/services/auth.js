@@ -3,6 +3,7 @@ const firebase = require("firebase/app");
 require("firebase/auth");
 require("firebase/firestore");
 
+// Authentication based on code from Firebase tutorial: https://firebase.google.com/docs/auth/web/google-signin
 const firebaseConfig = {
     apiKey: "AIzaSyBsPqwePo9hmTG3H_xCwpc534_ynne1IsU",
     authDomain: "savor-3e31c.firebaseapp.com",

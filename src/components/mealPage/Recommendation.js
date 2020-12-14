@@ -1,8 +1,8 @@
 import React ,{Component} from "react"
-import { auth, db} from "../../services/auth";
+import { db } from "../../services/auth";
 import Recipe from "./Recipe"
 
-
+// db query is based on code from Firebase tutorial: https://firebase.google.com/docs/firestore/query-data/queries
 class  Recommendation2 extends Component {
     constructor(props) {
         super(props);
@@ -59,9 +59,6 @@ class  Recommendation2 extends Component {
      return < Recipe recipe={recipe} index = {index}/>
 
     })}
-    
-          
-    
         </div>  
         )
     }

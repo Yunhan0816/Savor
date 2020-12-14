@@ -5,6 +5,7 @@ import style from "./LogInStart.scss"
 const firebase = require("firebase/app");
 
 // Add the Firebase products that you want to use
+// Authentication based on code from Firebase tutorial: https://firebase.google.com/docs/auth/web/google-signin
 require("firebase/auth");
 require("firebase/firestore");
 
