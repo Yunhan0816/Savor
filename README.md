@@ -7,3 +7,6 @@
 1. run `gatsby built`
 2. run `firebase deploy`
 3. go to the url `https://savor-3e31c.web.app`
+
+### Known Bugs
+1. HTML/CSS gets inconsistent when you resize the window.
