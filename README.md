@@ -13,7 +13,7 @@ Backend: Firebase
 Wireframes: https://www.figma.com/file/6tiVlv90DcKcGK322zEiJz/Savor
 
 ### To run the app locally
-1. clone this repo. run `git clone https://github.com/Yunhan0816/Savor.git'
+1. clone this repo. run `git clone https://github.com/Yunhan0816/Savor.git`
 2. Go into your cloned directory
 3. run `npm install`
 4. run `gatsby develop`
