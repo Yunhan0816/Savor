@@ -3,6 +3,7 @@
 Savor is a web application, or a meal-planning platform that takes in filters such as family size, dietary preferences, and budget, to formulate a grocery list that plans one’s weekly meal plan. It maximizes each ingredient purchased by the consumer by using increments of each item purchased in multiple recipes. 
 
 Front-end: React.js, Gatsby.js, Bootstrap
+
 Backend: Firebase
 * Built-in OAuth for Google Authentication
 * Database: NoSQL
